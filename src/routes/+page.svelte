@@ -1,2 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	// import Hero from '$lib/components/hero.svelte';
+</script>
+
+<!-- <Hero /> -->
+
+<h1 class=" text-center text-5xl">🚧 Site Under Construction 🚧</h1>
