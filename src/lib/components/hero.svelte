@@ -4,15 +4,14 @@
 
 <Card.Root>
 	<Card.Header>
-		<Card.Title tag="h1">Denrei Keith</Card.Title>
-		<Card.Description>check</Card.Description>
+		<Card.Title tag="h1" class="text-3xl">💫 About Me</Card.Title>
 	</Card.Header>
 	<Card.Content>
 		<p>
-			Denrei Keith is a software engineer with a passion for building applications that help people.
-			He has a background in computer science and has worked on a variety of projects ranging from
-			web applications to mobile apps. In his free time, he enjoys playing video games and watching
-			movies.
+			Hey! <span class="text-bold">I'm Den</span>, an aspiring Software Engineer at the University
+			of Mindanao taking the Bachelor of Science in Computer Science course. I may have multiple
+			interests in tech, but currently I'm focused on web development, particularly on the back-end
+			side of things.
 		</p>
 	</Card.Content>
 </Card.Root>
