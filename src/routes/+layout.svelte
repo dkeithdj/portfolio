@@ -14,7 +14,7 @@
 		theme = $mode || 'dark';
 	});
 
-	const title = "Denrei's Portfolio";
+	const title = 'Denrei Keith';
 </script>
 
 <ModeWatcher defaultMode={'dark'} />
