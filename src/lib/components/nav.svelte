@@ -16,7 +16,7 @@
 <div class="w-full max-w-3xl">
 	<nav class=" my-4 flex max-w-3xl items-center justify-between">
 		<img src="/{theme}-rounded.png" alt="logo" class="h-10 w-10" />
-		<p class="text-2xl">denreikeith</p>
+		<p class="hidden text-2xl sm:block">denreikeith</p>
 		<ThemeSwitch />
 	</nav>
 </div>
