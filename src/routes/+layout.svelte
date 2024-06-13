@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Nav from '$lib/components/nav.svelte';
 	import '../app.css';
 	import Footer from '$lib/components/footer.svelte';
@@ -25,7 +25,7 @@
 
 <title>{title}</title>
 <main class="mx-8 flex h-screen flex-col">
-	<Nav />
+	<div class="flex justify-center"><Nav /></div>
 	<section class="flex-grow"><slot /></section>
-	<Footer />
+	<div class="flex justify-center"><Footer /></div>
 </main>
