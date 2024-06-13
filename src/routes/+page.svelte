@@ -1,7 +1,9 @@
 <script lang="ts">
 	import Hero from '$lib/components/hero.svelte';
+	import Contacts from '$lib/components/contacts.svelte';
 </script>
 
-<Hero />
-
-<!-- <h1 class=" text-center text-5xl">🚧 Site Under Construction 🚧</h1> -->
+<div class="mx-auto max-w-3xl space-y-4">
+	<Contacts />
+	<Hero />
+</div>
