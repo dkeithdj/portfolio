@@ -13,8 +13,8 @@
 			href: 'https://www.github.com/dkeithdj'
 		},
 		{
-			name: 'Gmail',
-			href: ''
+			name: 'Dev.to',
+			href: 'https://dev.to/denrei'
 		}
 	];
 </script>
