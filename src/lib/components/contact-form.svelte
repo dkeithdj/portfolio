@@ -67,7 +67,9 @@
 				{#if $delayed}
 					<Dots />
 				{/if}
-				<p class="ml-1">{$delayed ? 'Sending' : 'Submit'}</p></Form.Button
+				<p class={$delayed || $submitting ? 'ml-1' : ''}>
+					{$delayed ? 'Sending' : 'Submit'}
+				</p></Form.Button
 			>
 		</form>
 	</Card.Content>

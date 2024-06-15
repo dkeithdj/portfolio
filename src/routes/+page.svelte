@@ -1,6 +1,7 @@
 <script lang="ts">
 	import ContactForm from '$lib/components/contact-form.svelte';
 	import Contacts from '$lib/components/contacts.svelte';
+	import Education from '$lib/components/education.svelte';
 	import Experience from '$lib/components/experience.svelte';
 	import Hero from '$lib/components/hero.svelte';
 	import Projects from '$lib/components/projects.svelte';
@@ -16,5 +17,7 @@
 	<Experience />
 	<Projects />
 	<Technologies />
+	<Education />
+
 	<ContactForm data={data.form} />
 </div>
