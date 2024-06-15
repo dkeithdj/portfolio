@@ -4,7 +4,7 @@
 
 <Card.Root>
 	<Card.Header>
-		<Card.Title tag="h1" class="text-3xl">💫 About Me</Card.Title>
+		<Card.Title tag="h1" class="text-3xl">🏫 Education</Card.Title>
 	</Card.Header>
 	<Card.Content>
 		<p>
@@ -13,9 +13,5 @@
 			interests in tech, but currently I'm focused on web development, particularly on the back-end
 			side of things.
 		</p>
-
-		<!-- TODO: Add stuff like these -->
-		<!-- <p>Vim Enjoyer</p> -->
-		<!-- <p>Linux tinkerer</p> -->
 	</Card.Content>
 </Card.Root>

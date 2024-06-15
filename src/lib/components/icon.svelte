@@ -15,4 +15,4 @@
 	export let icon = 'simpleicons';
 </script>
 
-<img class={className} alt="simple-icon" src="https://cdn.simpleicons.org/{icon}/{theme}" />
+<img class={className} alt={icon} src="https://cdn.simpleicons.org/{icon}/{theme}" />
