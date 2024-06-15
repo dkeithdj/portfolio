@@ -8,13 +8,13 @@
 			title: 'Azanzar',
 			description: 'An application tracking system to streamline hiring process',
 			link: '',
-			stack: ['Django', 'Python', 'Next.js']
+			stack: ['Django', 'Python', 'Next.js', 'Postgresql']
 		},
 		{
 			title: 'University of Mindanao Enigma Website',
 			description: 'The official website of the University of Mindanao Enigma (under development)',
 			link: 'https://umenigma.vercel.app/',
-			stack: ['Astro', 'Typescript', 'React']
+			stack: ['Astro', 'Typescript', 'React', 'Sanity']
 		},
 		{
 			title: "Joe's Ordering System",

@@ -13,6 +13,13 @@
 	});
 	export let className = 'ml-1 mr-1 h-5';
 	export let icon = 'simpleicons';
+	export let size = '24';
 </script>
 
-<img class={className} alt={icon} src="https://cdn.simpleicons.org/{icon}/{theme}" />
+<img
+	width={size}
+	height={size}
+	class={className}
+	alt={icon}
+	src="https://cdn.simpleicons.org/{icon}/{theme}"
+/>
