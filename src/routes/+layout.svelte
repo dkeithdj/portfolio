@@ -4,6 +4,7 @@
 	import Footer from '$lib/components/footer.svelte';
 	import { ModeWatcher, mode } from 'mode-watcher';
 	import { beforeUpdate, afterUpdate } from 'svelte';
+	import { Toaster } from '$lib/components/ui/sonner';
 
 	let theme = $mode || 'dark';
 	beforeUpdate(() => {
@@ -16,6 +17,8 @@
 
 	const title = 'Denrei Keith';
 </script>
+
+<Toaster richColors />
 
 <ModeWatcher defaultMode={'dark'} />
 

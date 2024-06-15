@@ -3,20 +3,29 @@
 	import * as Card from '$lib/components/ui/card';
 	import { Input } from '$lib/components/ui/input';
 	import { formSchema, type FormSchema } from '$lib/schema';
+	import Spinner from '$lib/components/spinner.svelte';
 
 	import { type SuperValidated, type Infer, superForm } from 'sveltekit-superforms';
 	import { zodClient } from 'sveltekit-superforms/adapters';
 	import { Textarea } from '$lib/components/ui/textarea';
+	import Dots from './dots.svelte';
+
+	import { toast } from 'svelte-sonner';
 
 	export let data: SuperValidated<Infer<FormSchema>>;
 
 	const form = superForm(data, {
-		// delayMs: 5000,
-		// timeoutMs: 10000,
-		validators: zodClient(formSchema)
+		validators: zodClient(formSchema),
+		onUpdate(event) {
+			if (event.result.type === 'success') {
+				toast.success(event.form.message);
+			} else {
+				toast.error('Something went wrong, please try again');
+			}
+		}
 	});
 
-	const { form: formData, enhance, message, submitting, delayed, timeout } = form;
+	const { form: formData, enhance, submitting, delayed } = form;
 </script>
 
 <Card.Root>
@@ -50,18 +59,15 @@
 				</Form.Control>
 				<Form.FieldErrors />
 			</Form.Field>
-			<Form.Button>Submit</Form.Button>
-			{#if $message}
-				<div>{$message}</div>
-			{/if}
-			{#if $submitting !== $delayed}
-				<img class="text-primary" src="/spinner.svg" alt="spinner" />
-			{/if}
-			{#if $delayed}
-				<img class="text-primary" src="/dots.svg" alt="spinner" />
-			{/if}
-			<img class="text-primary" src="/spinner.svg" alt="spinner" />
-			<img class="text-primary" src="/dots.svg" alt="spinner" />
+			<Form.Button disabled={$submitting || $delayed}>
+				{#if $submitting !== $delayed}
+					<Spinner />
+				{/if}
+				{#if $delayed}
+					<Dots />
+				{/if}
+				<p class="ml-1">{$delayed ? 'Sending' : 'Submit'}</p></Form.Button
+			>
 		</form>
 	</Card.Content>
 </Card.Root>
