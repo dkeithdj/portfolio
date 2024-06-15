@@ -2,32 +2,39 @@
 	import * as Card from '$lib/components/ui/card';
 	import { Button } from '$lib/components/ui/button';
 	import Icon from './icon.svelte';
+
+	const socials = [
+		{
+			name: 'LinkedIn',
+			href: 'https://www.linkedin.com/in/denreikeith'
+		},
+		{
+			name: 'GitHub',
+			href: 'https://www.github.com/dkeithdj'
+		},
+		{
+			name: 'Dev.to',
+			href: 'https://dev.to/denrei'
+		}
+	];
 </script>
 
 <Card.Root>
 	<Card.Header>
 		<Card.Title tag="h1" class="text-3xl">🌐 Keep in tabs!</Card.Title>
 	</Card.Header>
-	<Card.Content>
-		<Button
-			class="inline-flex"
-			variant="secondary"
-			href="https://www.linkedin.com/in/denreikieth"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
-			<Icon icon="LinkedIn" />
-			<p class="text-lg">LinkedIn</p>
-		</Button>
-		<Button
-			class="inline-flex"
-			variant="secondary"
-			href="https://www.github.com/dkeithdj"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
-			<Icon icon="GitHub" />
-			<p class="text-lg">Github</p>
-		</Button>
+	<Card.Content class="flex w-full flex-wrap justify-around space-y-4">
+		{#each socials as social}
+			<Button
+				class="inline-flex w-full"
+				variant="secondary"
+				href={social.href}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<Icon icon={social.name} />
+				<p class="text-lg">{social.name}</p>
+			</Button>
+		{/each}
 	</Card.Content>
 </Card.Root>
