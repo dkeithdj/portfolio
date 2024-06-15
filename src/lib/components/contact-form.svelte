@@ -1,33 +1,67 @@
-<script>
-	let status = '';
-	const handleSubmit = async (data) => {
-		status = 'Submitting...';
-		const formData = new FormData(data.currentTarget);
-		const object = Object.fromEntries(formData);
-		const json = JSON.stringify(object);
+<script lang="ts">
+	import * as Form from '$lib/components/ui/form';
+	import * as Card from '$lib/components/ui/card';
+	import { Input } from '$lib/components/ui/input';
+	import { formSchema, type FormSchema } from '$lib/schema';
 
-		const response = await fetch('https://api.web3forms.com/submit', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-				Accept: 'application/json'
-			},
-			body: json
-		});
-		const result = await response.json();
-		if (result.success) {
-			console.log(result);
-			status = result.message || 'Success';
-		}
-	};
+	import { type SuperValidated, type Infer, superForm } from 'sveltekit-superforms';
+	import { zodClient } from 'sveltekit-superforms/adapters';
+	import { Textarea } from '$lib/components/ui/textarea';
+
+	export let data: SuperValidated<Infer<FormSchema>>;
+
+	const form = superForm(data, {
+		// delayMs: 5000,
+		// timeoutMs: 10000,
+		validators: zodClient(formSchema)
+	});
+
+	const { form: formData, enhance, message, submitting, delayed, timeout } = form;
 </script>
 
-<form on:submit|preventDefault={handleSubmit}>
-	<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
-	<input type="text" name="name" required />
-	<input type="email" name="email" required />
-	<textarea name="message" required rows="3"></textarea>
-	<input type="submit" />
-</form>
-
-<div>{status}</div>
+<Card.Root>
+	<Card.Header>
+		<Card.Title tag="h1" class="text-3xl">🤝 Wanna Collaborate?</Card.Title>
+	</Card.Header>
+	<Card.Content
+		><form method="POST" action="?/contact" use:enhance>
+			<Form.Field {form} name="name">
+				<Form.Control let:attrs>
+					<Form.Label>Name</Form.Label>
+					<Input {...attrs} bind:value={$formData.name} />
+				</Form.Control>
+				<Form.FieldErrors />
+			</Form.Field>
+			<Form.Field {form} name="email">
+				<Form.Control let:attrs>
+					<Form.Label>Email</Form.Label>
+					<Input {...attrs} bind:value={$formData.email} />
+				</Form.Control>
+				<Form.FieldErrors />
+			</Form.Field>
+			<Form.Field {form} name="message">
+				<Form.Control let:attrs>
+					<Form.Label>Message</Form.Label>
+					<Textarea
+						{...attrs}
+						placeholder="Type your message here"
+						bind:value={$formData.message}
+					/>
+				</Form.Control>
+				<Form.FieldErrors />
+			</Form.Field>
+			<Form.Button>Submit</Form.Button>
+			{#if $message}
+				<div>{$message}</div>
+			{/if}
+			{#if $submitting !== $delayed}
+				<img class="text-primary" src="/spinner.svg" alt="spinner" />
+			{/if}
+			{#if $delayed}
+				<img class="text-primary" src="/dots.svg" alt="spinner" />
+			{/if}
+			<img class="text-primary" src="/spinner.svg" alt="spinner" />
+			<img class="text-primary" src="/dots.svg" alt="spinner" />
+		</form>
+	</Card.Content>
+</Card.Root>
