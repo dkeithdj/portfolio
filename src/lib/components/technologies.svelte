@@ -25,7 +25,6 @@
 		'React',
 		'TailwindCSS',
 		'Web3.js',
-		'Firebase',
 		'Postgresql',
 		'Linux',
 		'VoidLinux',
@@ -45,7 +44,7 @@
 	</Card.Header>
 	<Card.Content class="flex flex-row flex-wrap">
 		{#each technologies as technology}
-			<Icon size="60" icon={technology} className="m-1 lg:m-2 lg:h-14 h-8" />
+			<Icon size="60" icon={technology} className="m-1 md:h-12 md:m-2 lg:h-14 h-8" />
 		{/each}
 	</Card.Content>
 </Card.Root>
