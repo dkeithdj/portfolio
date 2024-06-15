@@ -1,20 +1,18 @@
 <script lang="ts">
 	import * as Card from '$lib/components/ui/card';
-	import Icon from './icon.svelte';
 
 	const experiences = [
 		{
 			title: 'Ingenuity Softwares',
-			position: 'Intern',
-			period: '',
-			description: 'An application tracking system to streamline hiring process',
-			stack: ['Django', 'Python', 'Next.js']
+			position: 'Backend Developer Intern',
+			period: 'April 2024 - May 2024',
+			description: ''
 		},
 		{
-			title: "Joe's Ordering System",
+			title: 'Aquila Softwares',
 			position: 'Junior Software Engineer',
-			description: 'An intuitive ordering system that utilizes QR codes to order products',
-			stack: ['Next.js', 'Typescript', 'tRPC']
+			period: 'September 2023 - December 2023',
+			description: 'Assisted in developing the backend of a comprehensive attendance system'
 		}
 	];
 </script>
@@ -25,13 +23,13 @@
 	</Card.Header>
 	{#each experiences as experience}
 		<Card.Content>
-			<p>{experience.title}</p>
-			<p>{experience.description}</p>
-			<div class="flex">
-				{#each experience.stack as tool}
-					<Icon icon={tool} />
-				{/each}
-			</div>
+			<Card.Title tag="h1" class="text-xl font-bold">{experience.title}</Card.Title>
+			<Card.Title class="text-lg font-medium">{experience.position}</Card.Title>
+			<Card.Description>{experience.period}</Card.Description>
+
+			{#if experience.description}
+				<p class="mt-2">{experience.description}</p>
+			{/if}
 		</Card.Content>
 	{/each}
 </Card.Root>

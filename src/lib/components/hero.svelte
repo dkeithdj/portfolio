@@ -13,5 +13,9 @@
 			interests in tech, but currently I'm focused on web development, particularly on the back-end
 			side of things.
 		</p>
+
+		<!-- TODO: Add stuff like these -->
+		<!-- <p>Vim Enjoyer</p> -->
+		<!-- <p>Linux tinkerer</p> -->
 	</Card.Content>
 </Card.Root>

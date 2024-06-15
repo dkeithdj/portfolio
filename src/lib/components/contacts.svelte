@@ -6,7 +6,7 @@
 	const socials = [
 		{
 			name: 'LinkedIn',
-			href: 'https://www.linkedin.com/in/denreikieth'
+			href: 'https://www.linkedin.com/in/denreikeith'
 		},
 		{
 			name: 'GitHub',
@@ -23,10 +23,10 @@
 	<Card.Header>
 		<Card.Title tag="h1" class="text-3xl">🌐 Keep in tabs!</Card.Title>
 	</Card.Header>
-	<Card.Content class="flex w-full justify-around">
+	<Card.Content class="flex w-full flex-wrap justify-around space-y-4">
 		{#each socials as social}
 			<Button
-				class="inline-flex"
+				class="inline-flex w-full"
 				variant="secondary"
 				href={social.href}
 				target="_blank"
