@@ -28,12 +28,13 @@
 	const { form: formData, enhance, submitting, delayed } = form;
 </script>
 
-<Card.Root>
+<Card.Root class="bg-secondary/50">
 	<Card.Header>
 		<Card.Title tag="h1" class="text-3xl">🤝 Wanna Collaborate?</Card.Title>
 	</Card.Header>
 	<Card.Content
 		><form method="POST" action="?/contact" use:enhance>
+			<input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
 			<Form.Field {form} name="name">
 				<Form.Control let:attrs>
 					<Form.Label>Name</Form.Label>
