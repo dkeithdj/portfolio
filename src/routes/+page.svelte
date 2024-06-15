@@ -1,9 +1,10 @@
 <script lang="ts">
-	import Hero from '$lib/components/hero.svelte';
+	import ContactForm from '$lib/components/contact-form.svelte';
 	import Contacts from '$lib/components/contacts.svelte';
 	import Experience from '$lib/components/experience.svelte';
+	import Hero from '$lib/components/hero.svelte';
 	import Projects from '$lib/components/projects.svelte';
-	import ContactForm from '$lib/components/contact-form.svelte';
+	import Technologies from '$lib/components/technologies.svelte';
 
 	import type { PageData } from './$types.js';
 	export let data: PageData;
@@ -14,5 +15,6 @@
 	<Hero />
 	<Experience />
 	<Projects />
+	<Technologies />
 	<ContactForm data={data.form} />
 </div>
