@@ -33,13 +33,13 @@
 		<Card.Content>
 			<Card.Title tag="h1" class="text-xl font-bold">{school.name}</Card.Title>
 
-			<Card.Title class="text-lg font-bold">Achievements</Card.Title>
+			<Card.Title class="text-lg font-semibold">Achievements</Card.Title>
 			<div class="mt-2 flex flex-col">
 				{#each school.achievements as achievement}
 					<p>🥇 {achievement}</p>
 				{/each}
 			</div>
-			<Card.Title class="text-lg font-bold">Competitions</Card.Title>
+			<Card.Title class="text-lg font-semibold">Competitions</Card.Title>
 			<div class="mt-2 flex flex-col">
 				{#each school.competitions as competition}
 					<p>🏆️ <strong>{competition.place}</strong>: {competition.title}</p>
