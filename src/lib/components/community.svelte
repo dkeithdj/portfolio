@@ -28,12 +28,6 @@
 			period: 'November 2022 - August 2023 '
 		},
 		{
-			event: 'Davao Tech Dialogues 2024',
-			organization: 'DEVCON Davao Chapter',
-			position: 'Invited as Panel Speaker',
-			period: 'March 2024'
-		},
-		{
 			event: 'DevFest 2023',
 			organization: 'Google Developers Group Davao',
 			position: 'Promotions Team',
