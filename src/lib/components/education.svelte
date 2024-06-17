@@ -1,7 +1,13 @@
 <script lang="ts">
 	import * as Card from '$lib/components/ui/card';
 
-	const schools = [
+	const schools: {
+		name: string;
+		course: string;
+		period: string;
+		achievements: string[];
+		competitions: { title: string; place: string }[];
+	}[] = [
 		{
 			name: 'University of Mindanao - Main',
 			course: 'Bachelor of Science in Computer Science',
@@ -29,20 +35,20 @@
 	<Card.Header>
 		<Card.Title tag="h1" class="text-3xl">🏫 Education</Card.Title>
 	</Card.Header>
-	{#each schools as school}
+	{#each schools as { name, achievements, competitions }}
 		<Card.Content>
-			<Card.Title tag="h1" class="text-xl font-bold">{school.name}</Card.Title>
+			<Card.Title tag="h1" class="text-xl font-bold">{name}</Card.Title>
 
 			<Card.Title class="text-lg font-semibold">Achievements</Card.Title>
 			<div class="mt-2 flex flex-col">
-				{#each school.achievements as achievement}
+				{#each achievements as achievement}
 					<p>🥇 {achievement}</p>
 				{/each}
 			</div>
 			<Card.Title class="text-lg font-semibold">Competitions</Card.Title>
 			<div class="mt-2 flex flex-col">
-				{#each school.competitions as competition}
-					<p>🏆️ <strong>{competition.place}</strong>: {competition.title}</p>
+				{#each competitions as { title, place }}
+					<p>🏆️ <strong>{place}</strong>: {title}</p>
 				{/each}
 			</div>
 		</Card.Content>

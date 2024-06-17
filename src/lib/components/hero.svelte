@@ -1,5 +1,6 @@
 <script lang="ts">
 	import * as Card from '$lib/components/ui/card';
+	import Icon from './icon.svelte';
 </script>
 
 <Card.Root>
@@ -13,9 +14,10 @@
 			interests in tech, but currently I'm focused on web development, particularly on the back-end
 			side of things.
 		</p>
-
-		<!-- TODO: Add stuff like these -->
-		<!-- <p>Vim Enjoyer</p> -->
-		<!-- <p>Linux tinkerer</p> -->
+	</Card.Content>
+	<Card.Content
+		><p class="inline-flex">
+			Also a <Icon icon="vim" /> enjoyer, Linux tinkerer, and a keyboard guy.
+		</p>
 	</Card.Content>
 </Card.Root>
