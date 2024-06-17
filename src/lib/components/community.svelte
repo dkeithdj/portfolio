@@ -46,17 +46,17 @@
 	<Card.Header>
 		<Card.Title tag="h1" class="text-3xl">🧑‍🤝‍🧑 Community</Card.Title>
 	</Card.Header>
-	{#each communities as community}
+	{#each communities as { event, organization, position, period }}
 		<Card.Content>
-			<Card.Title tag="h1" class="text-xl font-bold">{community.organization}</Card.Title>
+			<Card.Title tag="h1" class="text-xl font-bold">{organization}</Card.Title>
 			<Card.Title class="text-lg font-semibold">
-				{#if community.event}
-					{community.event}:
+				{#if event}
+					{event}:
 				{/if}
-				{community.position}</Card.Title
+				{position}</Card.Title
 			>
 			<Card.Description>
-				{community.period}
+				{period}
 			</Card.Description>
 		</Card.Content>
 	{/each}

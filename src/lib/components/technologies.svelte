@@ -19,6 +19,7 @@
 		'Vercel',
 		'.Net',
 		'Django',
+		'Flask',
 		'Fastify',
 		'Flutter',
 		'Next.JS',
@@ -34,7 +35,10 @@
 		'Docker',
 		'Svelte',
 		'Nixos',
-		'Elixir'
+		'Elixir',
+		'Svelte',
+		'FastAPI',
+		'AmazonWebServices'
 	];
 </script>
 

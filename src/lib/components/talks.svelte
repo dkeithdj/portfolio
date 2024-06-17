@@ -1,7 +1,7 @@
 <script lang="ts">
 	import * as Card from '$lib/components/ui/card';
 
-	const communities: {
+	const talks: {
 		event: string;
 		organization: string;
 		topic: string;
@@ -23,14 +23,14 @@
 	<Card.Header>
 		<Card.Title tag="h1" class="text-3xl">💬 Talks</Card.Title>
 	</Card.Header>
-	{#each communities as community}
+	{#each talks as { event, organization, topic }}
 		<Card.Content>
-			<Card.Title tag="h1" class="text-xl font-bold">{community.organization}</Card.Title>
+			<Card.Title tag="h1" class="text-xl font-bold">{organization}</Card.Title>
 			<Card.Title class="text-lg font-semibold">
-				{community.event}
+				{event}
 			</Card.Title>
 			<Card.Description>
-				{community.topic}
+				{topic}
 			</Card.Description>
 		</Card.Content>
 	{/each}

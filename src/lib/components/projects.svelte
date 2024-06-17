@@ -3,11 +3,15 @@
 	import Icon from './icon.svelte';
 	import { Button } from '$lib/components/ui/button';
 
-	const projects = [
+	const projects: {
+		title: string;
+		description: string;
+		link?: string;
+		stack: string[];
+	}[] = [
 		{
 			title: 'Azanzar',
 			description: 'An application tracking system to streamline hiring process',
-			link: '',
 			stack: ['Django', 'Python', 'Next.js', 'Postgresql']
 		},
 		{
@@ -36,21 +40,17 @@
 	<Card.Header>
 		<Card.Title tag="h1" class="text-3xl">📁 Projects</Card.Title>
 	</Card.Header>
-	{#each projects as project}
+	{#each projects as { title, description, link, stack }}
 		<Card.Content>
-			<Card.Title tag="h1" class="text-xl font-bold">{project.title}</Card.Title>
-			{#if project.link}
-				<Button
-					target="_blank"
-					rel="noopener noreferrer"
-					href={project.link}
-					variant="link"
-					class="p-0">{project.link}</Button
+			<Card.Title tag="h1" class="text-xl font-bold">{title}</Card.Title>
+			{#if link}
+				<Button target="_blank" rel="noopener noreferrer" href={link} variant="link" class="p-0"
+					>{link}</Button
 				>
 			{/if}
-			<p>{@html project.description}</p>
+			<p>{@html description}</p>
 			<div class="mt-2 flex space-x-4">
-				{#each project.stack as tool}
+				{#each stack as tool}
 					<Icon icon={tool} className="w-8 h-8" />
 				{/each}
 			</div>
