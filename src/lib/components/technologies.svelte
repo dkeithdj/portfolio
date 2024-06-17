@@ -42,7 +42,7 @@
 	<Card.Header>
 		<Card.Title tag="h1" class="text-3xl">🤖 Technologies</Card.Title>
 	</Card.Header>
-	<Card.Content class="flex flex-row flex-wrap">
+	<Card.Content class="flex flex-row flex-wrap justify-center">
 		{#each technologies as technology}
 			<Icon size="60" icon={technology} className="m-1 md:h-12 md:m-2 lg:h-14 h-8" />
 		{/each}
