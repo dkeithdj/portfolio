@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Certifications from '$lib/components/certifications.svelte';
 	import Community from '$lib/components/community.svelte';
 	import ContactForm from '$lib/components/contact-form.svelte';
 	import Contacts from '$lib/components/contacts.svelte';
@@ -20,6 +21,7 @@
 	<Technologies />
 	<Education />
 	<Community />
+	<Certifications />
 
 	<ContactForm data={data.form} />
 </div>
