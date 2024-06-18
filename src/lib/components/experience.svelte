@@ -7,11 +7,11 @@
 		period: string;
 		description?: string;
 	}[] = [
-		{
-			title: 'Mugna Technologies',
-			position: 'Backend Developer Intern',
-			period: 'June 2024 - Present'
-		},
+		// {
+		// 	title: 'Mugna Technologies',
+		// 	position: 'Backend Developer Intern',
+		// 	period: 'June 2024 - Present'
+		// },
 		{
 			title: 'Ingenuity Softwares',
 			position: 'Backend Developer Intern',
