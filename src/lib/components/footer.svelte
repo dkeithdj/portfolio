@@ -12,7 +12,8 @@
 			<Icon icon="svelte" className="h-5 pl-1" />
 		</p>
 		<div class="flex items-center">
-			<Icon icon="GitHub" className="h-5 pl-1" />
+			<a href="https://github.com/dkeithdj/portfolio"><Icon icon="GitHub" className="h-5 pl-1" /></a
+			>
 		</div>
 	</div>
 </footer>
