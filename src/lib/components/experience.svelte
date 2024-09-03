@@ -9,8 +9,13 @@
 	}[] = [
 		{
 			title: 'Mugna Technologies',
+			position: 'Junior DevOps Engineer',
+			period: 'September 2024 - Present'
+		},
+		{
+			title: 'Mugna Technologies',
 			position: 'Backend Developer Intern',
-			period: 'June 2024 - Present'
+			period: 'June 2024 - August 2024'
 		},
 		{
 			title: 'Ingenuity Softwares',
