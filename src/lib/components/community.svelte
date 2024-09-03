@@ -8,6 +8,11 @@
 		period?: string;
 	}[] = [
 		{
+			organization: 'Junior Blockchain Education Consortium of the Philippines - UM Davao',
+			position: 'Ambassador',
+			period: 'July 2024 - Present'
+		},
+		{
 			organization: 'Davao Young Executives',
 			position: 'Community Outreach Committee',
 			period: 'May 2024 - Present'
