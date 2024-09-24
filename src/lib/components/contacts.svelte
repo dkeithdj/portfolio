@@ -13,6 +13,10 @@
 			href: 'https://www.github.com/dkeithdj'
 		},
 		{
+			name: 'X',
+			href: 'https://www.x.com/_denreikeith'
+		},
+		{
 			name: 'Dev.to',
 			href: 'https://dev.to/denrei'
 		}
