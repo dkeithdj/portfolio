@@ -10,6 +10,12 @@
 		stack: string[];
 	}[] = [
 		{
+			title: 'RoastJS',
+			description: 'A website that roasts javascript, JS-Free',
+			link: 'https://roastjs.denreikeith.me',
+			stack: ['Python', 'htmx']
+		},
+		{
 			title: 'Azanzar',
 			description: 'An application tracking system to streamline hiring process',
 			stack: ['Django', 'Python', 'Next.js', 'Postgresql']
