@@ -8,6 +8,11 @@
 		period?: string;
 	}[] = [
 		{
+			organization: 'Blockchain Campus Conference 2024 - Mindanao',
+			position: 'Head of Volunteers',
+			period: 'August 2024 - October 2024'
+		},
+		{
 			organization: 'Junior Blockchain Education Consortium of the Philippines - UM Davao',
 			position: 'Ambassador',
 			period: 'July 2024 - Present'
