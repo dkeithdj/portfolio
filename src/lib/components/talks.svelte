@@ -7,6 +7,11 @@
 		topic: string;
 	}[] = [
 		{
+			event: 'Blockchain Campus Conference 2024 - Mindanao',
+			organization: 'JBECP | The BLOKC | SuperteamPH',
+			topic: 'Student Panel'
+		},
+		{
 			event: 'Davao Tech Dialogues 2024',
 			organization: 'DEVCON Davao Chapter',
 			topic: 'Invited as Panel Speaker'
