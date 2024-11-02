@@ -10,6 +10,12 @@
 		stack: string[];
 	}[] = [
 		{
+			title: 'Floclic',
+			description: 'Seemless workflow powered by Solana',
+			link: 'https://arena.colosseum.org/projects/explore/floclic',
+			stack: ['Rust', 'Next.js']
+		},
+		{
 			title: 'RoastJS',
 			description: 'A website that roasts javascript, JS-Free',
 			link: 'https://roastjs.denreikeith.me',

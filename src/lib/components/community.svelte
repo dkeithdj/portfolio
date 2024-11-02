@@ -13,6 +13,11 @@
 			period: 'August 2024 - October 2024'
 		},
 		{
+			organization: 'Solana Breakpoint 2024',
+			position: 'Student Representative',
+			period: 'September 2024'
+		},
+		{
 			organization: 'Junior Blockchain Education Consortium of the Philippines - UM Davao',
 			position: 'Ambassador',
 			period: 'July 2024 - Present'
