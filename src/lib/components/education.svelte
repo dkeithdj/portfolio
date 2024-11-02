@@ -35,9 +35,10 @@
 	<Card.Header>
 		<Card.Title tag="h1" class="text-3xl">🏫 Education</Card.Title>
 	</Card.Header>
-	{#each schools as { name, achievements, competitions }}
+	{#each schools as { name, achievements, course, competitions }}
 		<Card.Content>
 			<Card.Title tag="h1" class="text-xl font-bold">{name}</Card.Title>
+			<Card.Title class="text-md">{course}</Card.Title>
 
 			<Card.Title class="text-lg font-semibold">Achievements</Card.Title>
 			<div class="mt-2 flex flex-col">
