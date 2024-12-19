@@ -7,6 +7,11 @@
 		topic: string;
 	}[] = [
 		{
+			event: 'AWS Community Day Davao 2024',
+			organization: 'AWSUG',
+			topic: 'Speaker'
+		},
+		{
 			event: 'Blockchain Campus Conference 2024 - Mindanao',
 			organization: 'JBECP | The BLOKC | SuperteamPH',
 			topic: 'Student Panel'
