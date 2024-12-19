@@ -4,6 +4,11 @@
 
 	const certifications = [
 		{
+			title: 'AWS Certified Cloud Practitioner',
+			image: '/aws-certified-cloud-practitioner.png',
+			link: 'https://www.credly.com/badges/23f37371-ca1e-4da6-982b-33fa1d1f47a8/public_url'
+		},
+		{
 			title: 'IT Specialist: Java',
 			image: '/it-specialist-java.png',
 			link: 'https://www.credly.com/badges/220125fc-8048-471e-b2b3-eb3f06fdbb90/public_url'
