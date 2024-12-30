@@ -40,7 +40,9 @@
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				<Icon icon={social.name} />
+				{#if social.name !== 'LinkedIn'}
+					<Icon icon={social.name} />
+				{/if}
 				<p class="text-lg">{social.name}</p>
 			</Button>
 		{/each}
