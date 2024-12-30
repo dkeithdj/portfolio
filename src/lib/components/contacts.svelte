@@ -19,6 +19,10 @@
 		{
 			name: 'Dev.to',
 			href: 'https://dev.to/denrei'
+		},
+		{
+			name: 'Bluesky',
+			href: 'https://denreikeith.bsky.social'
 		}
 	];
 </script>
