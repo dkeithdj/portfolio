@@ -5,7 +5,7 @@
 <footer class="w-full max-w-3xl">
 	<div class="flex items-center justify-between">
 		<div class="flex h-16 items-center justify-between">
-			<p class="inline-flex">&copy; 2024 Denrei</p>
+			<p class="inline-flex">&copy; 2025 Denrei</p>
 		</div>
 		<p class="flex items-center">
 			made with
