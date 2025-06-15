@@ -18,7 +18,7 @@
 		{
 			title: 'RoastJS',
 			description: 'A website that roasts javascript, JS-Free',
-			link: 'https://roastjs.denreikeith.me',
+			link: 'https://roastjs.denreikeith.xyz',
 			stack: ['Python', 'htmx']
 		},
 		{
