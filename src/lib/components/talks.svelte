@@ -7,6 +7,11 @@
 		topic: string;
 	}[] = [
 		{
+			event: 'PyCon APAC 2025',
+			organization: 'Python',
+			topic: 'Lightning Talk: Nix with Python'
+		},
+		{
 			event: 'AWS Community Day Davao 2024',
 			organization: 'AWSUG',
 			topic: 'Speaker'

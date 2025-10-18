@@ -9,8 +9,8 @@
 	</Card.Header>
 	<Card.Content>
 		<p>
-			Hey! I'm <span class="font-bold">Den</span>, a DevOps Engineer, Community Builder, Computer
-			Science student, and a Web3 Contributor.
+			Hey! I'm <span class="font-bold">Den</span>, a DevOps Engineer, Community Builder, and a
+			Computer Science graduate.
 		</p>
 	</Card.Content>
 	<Card.Content

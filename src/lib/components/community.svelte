@@ -8,6 +8,11 @@
 		period?: string;
 	}[] = [
 		{
+			organization: 'DEVCON Davao',
+			position: 'VP for Programs',
+			period: 'Present'
+		},
+		{
 			organization: 'Blockchain Campus Conference 2024 - Mindanao',
 			position: 'Head of Volunteers',
 			period: 'August 2024 - October 2024'
@@ -20,17 +25,17 @@
 		{
 			organization: 'Junior Blockchain Education Consortium of the Philippines - UM Davao',
 			position: 'Ambassador',
-			period: 'July 2024 - Present'
+			period: 'July 2024 - July 2025'
 		},
 		{
 			organization: 'Davao Young Executives',
 			position: 'Community Outreach Committee',
-			period: 'May 2024 - Present'
+			period: 'May 2024 - December 2024'
 		},
 		{
 			organization: 'Davao Interschool Computer Enthusiasts',
 			position: 'Innovations Team',
-			period: 'April 2024 - Present'
+			period: 'April 2024 - December 2024'
 		},
 		{
 			organization: 'University of Mindanao Enigma',
